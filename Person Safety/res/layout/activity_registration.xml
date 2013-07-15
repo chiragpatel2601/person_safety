@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnStart"
+        android:layout_alignBottom="@+id/btnStart"
+        android:text="Save" />
+
+    <EditText
+        android:id="@+id/etPhone5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSave"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etPhone4"
+        android:ems="10"
+        android:hint="Phone Number5"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etPhone4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPhone5"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etPhone3"
+        android:ems="10"
+        android:hint="Phone Number4"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etFname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etHelp_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etLname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etFname"
+        android:layout_alignRight="@+id/etFname"
+        android:layout_below="@+id/etFname"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etPhone3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPhone4"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etPhone2"
+        android:ems="10"
+        android:hint="Phone Number3"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etHelp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPhone1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etLname"
+        android:ems="10"
+        android:hint="Help Text"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etPhone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPhone2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etHelp_text"
+        android:ems="10"
+        android:hint="Phone Number1"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etPhone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPhone3"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etPhone1"
+        android:ems="10"
+        android:hint="Phone Number2"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnStart"
+        android:layout_alignBottom="@+id/btnStart"
+        android:layout_alignRight="@+id/etPhone5"
+        android:layout_marginRight="59dp"
+        android:text="Close" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPhone5"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/btnCancel"
+        android:text="Help Me" />
+
+</RelativeLayout>
